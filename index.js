@@ -2,9 +2,7 @@ import express from 'express';
 import fs from 'fs';
 import chalk from 'chalk';
 import multer from 'multer';
-import makeWASocket, {
-  useMultiFileAuthState,
-  makeCacheableSignalKeyStore,
+import makeWASocket, {const { default: makeWASocket } = require('@whiskeysockets/baileys'),
   DisconnectReason,
   Browsers,
   fetchLatestBaileysVersion
